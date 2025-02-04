@@ -142,11 +142,11 @@ const KingsChroniclesOrigenProdactScreen = ({navigation, route}) => {
 
   //console.log('My product Url ==>', product);
 
-  //const customUserAgent = `Mozilla/5.0 (${deviceInfo.deviceSystemName}; ${deviceInfo.deviceModel}) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.2 Mobile/15E148 Safari/604.1`;
+  const customUserAgent = `Mozilla/5.0 (${deviceInfo.deviceSystemName}; ${deviceInfo.deviceModel}) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.2 Mobile/15E148 Safari/604.1`;
   //const customUserAgent = `Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0`;
 
-  const userAgent = `Mozilla/5.0 (iPhone; CPU iPhone OS 14_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Safari/604.1`;
-  const customUserAgent = `${userAgent} Safari/604.1`;
+  //const userAgent = `Mozilla/5.0 (iPhone; CPU iPhone OS 14_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Safari/604.1`;
+  //const customUserAgent = `${userAgent} Safari/604.1`;
   //console.log(customUserAgent);
 
   useEffect(() => {
@@ -167,7 +167,7 @@ const KingsChroniclesOrigenProdactScreen = ({navigation, route}) => {
   const handleNavigationStateChange = navState => {
     const {url} = navState;
     const {mainDocumentURL} = navState;
-    //console.log('NavigationState: ', navState);
+    console.log('NavigationState: ', navState);
     if (
       url.includes(
         'https://api.paymentiq.io/paymentiq/api/piq-redirect-assistance',
@@ -214,7 +214,11 @@ const KingsChroniclesOrigenProdactScreen = ({navigation, route}) => {
       //Linking.openURL(url);
       //return false;
       return; // Дозволити навігацію для цих URL-адрес
-    } else if (mainDocumentURL === 'https://winspirit.best/') {
+    } else if (
+      mainDocumentURL === 'https://winspirit.best/' ||
+      url.includes('https://malinacasino21.com') ||
+      url.includes('https://48ninecasino16.com/')
+    ) {
       // Умова для ввімкнення/вимкнення onOpenWindow
       setEnableOnOpenWindow(true);
     } else {
@@ -224,7 +228,7 @@ const KingsChroniclesOrigenProdactScreen = ({navigation, route}) => {
 
   const onShouldStartLoadWithRequest = event => {
     const {url} = event;
-    //console.log('onShouldStartLoadWithRequest========> ', event);
+    console.log('onShouldStartLoadWithRequest========> ', event);
 
     if (url.startsWith('mailto:')) {
       Linking.openURL(url);
