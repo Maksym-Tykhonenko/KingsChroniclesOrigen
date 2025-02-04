@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
-	<string>KingsChronicles</string>
+	<string>Kings Chronicles</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -17,42 +17,11 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0.2</string>
+	<string>1.0.3</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>1</string>
-	<key>SKAdNetworkItems</key>
-	<array>
-	<dict>
-		<key>SKAdNetworkIdentifier</key>
-		<string>cstr6suwn9.skadnetwork</string>
-	</dict>
-	<dict>
-		<key>SKAdNetworkIdentifier</key>
-		<string>v9wttpbfk9.skadnetwork</string>
-	</dict>
-	<dict>
-		<key>SKAdNetworkIdentifier</key>
-		<string>n38lu8286q.skadnetwork</string>
-	</dict>
-	<dict>
-		<key>SKAdNetworkIdentifier</key>
-		<string>lr83yxwka7.skadnetwork</string>
-	</dict>
-	<dict>
-		<key>SKAdNetworkIdentifier</key>
-		<string>f38h382jlk.skadnetwork</string>
-	</dict>
-	<dict>
-		<key>SKAdNetworkIdentifier</key>
-		<string>4pfyvq9l8r.skadnetwork</string>
-	</dict>
-	<dict>
-		<key>SKAdNetworkIdentifier</key>
-		<string>2u9pt9hc89.skadnetwork</string>
-	</dict>
-</array>
+	<string>5</string>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
 		<string>scotiabank</string>
@@ -94,6 +63,37 @@
 	<string>This app uses the Photo Library to select a photo only.</string>
 	<key>NSUserTrackingUsageDescription</key>
 	<string>To analyze the effectiveness of our marketing efforts and to improve the interaction with our users</string>
+	<key>SKAdNetworkItems</key>
+	<array>
+		<dict>
+			<key>SKAdNetworkIdentifier</key>
+			<string>cstr6suwn9.skadnetwork</string>
+		</dict>
+		<dict>
+			<key>SKAdNetworkIdentifier</key>
+			<string>v9wttpbfk9.skadnetwork</string>
+		</dict>
+		<dict>
+			<key>SKAdNetworkIdentifier</key>
+			<string>n38lu8286q.skadnetwork</string>
+		</dict>
+		<dict>
+			<key>SKAdNetworkIdentifier</key>
+			<string>lr83yxwka7.skadnetwork</string>
+		</dict>
+		<dict>
+			<key>SKAdNetworkIdentifier</key>
+			<string>f38h382jlk.skadnetwork</string>
+		</dict>
+		<dict>
+			<key>SKAdNetworkIdentifier</key>
+			<string>4pfyvq9l8r.skadnetwork</string>
+		</dict>
+		<dict>
+			<key>SKAdNetworkIdentifier</key>
+			<string>2u9pt9hc89.skadnetwork</string>
+		</dict>
+	</array>
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>remote-notification</string>
