@@ -217,7 +217,7 @@ const KingsChroniclesOrigenProdactScreen = ({navigation, route}) => {
     } else if (
       mainDocumentURL === 'https://winspirit.best/' ||
       url.includes('https://malinacasino21.com') ||
-      url.includes('https://48ninecasino')
+      url.includes('ninecasino')
     ) {
       // Умова для ввімкнення/вимкнення onOpenWindow
       setEnableOnOpenWindow(true);
