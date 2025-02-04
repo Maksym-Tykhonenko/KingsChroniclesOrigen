@@ -217,7 +217,7 @@ const KingsChroniclesOrigenProdactScreen = ({navigation, route}) => {
     } else if (
       mainDocumentURL === 'https://winspirit.best/' ||
       url.includes('https://malinacasino21.com') ||
-      url.includes('https://48ninecasino16.com/')
+      url.includes('https://48ninecasino')
     ) {
       // Умова для ввімкнення/вимкнення onOpenWindow
       setEnableOnOpenWindow(true);
@@ -358,6 +358,13 @@ const KingsChroniclesOrigenProdactScreen = ({navigation, route}) => {
     const {nativeEvent} = syntheticEvent;
     const {targetUrl} = nativeEvent;
     console.log('nativeEvent', nativeEvent);
+    if (targetUrl.includes('pay.funid.com')) {
+      Linking.openURL(targetUrl).catch(err => {
+        //console.error('Помилка при відкритті URL:', err);
+      });
+
+      return false; // Забороняємо WebView завантажувати цей URL
+    }
   };
 
   //ф-ція для повернення назад
